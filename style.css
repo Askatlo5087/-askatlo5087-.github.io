@@ -108,4 +108,46 @@
     color: #ddd;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
   }
-  
+  .featured-projects {
+  /* same vertical spacing as your other sections */
+  padding: 2rem 0;
+}
+
+.featured-projects h2 {
+  color: #fff;                     /* white heading */
+  font-size: 1.75rem;             
+  font-weight: bold;
+  border-bottom: 2px solid #fff;   /* underline just like Education/Skills */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.featured-projects .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;                       /* space between cards */
+}
+
+/* ─── Individual “cards” ──────────────────────────────────────────────────── */
+.project-card {
+  flex: 1 1 280px;                  /* auto-shrink, auto-grow, base width 280px */
+  background: rgba(255,255,255,0.05); /* slightly translucent white over dark bg */
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Project title inside each card */
+.project-card h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+
+/* Project description */
+.project-card p {
+  color: #ddd;
+  margin: 0;
+  line-height: 1.4;
+}
